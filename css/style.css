@@ -87,12 +87,11 @@ header nav ul li a {
         height: 100%;
         background-color: #4C5760;
         text-align: center;
-        
     }
 
     nav {
         position: absolute;
-        top: -250%;
+        top: -210%;
         left: 0;
         width: 100%;
         background-color: #4C5760;

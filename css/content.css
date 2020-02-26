@@ -1,0 +1,38 @@
+.content {
+    position: relative;
+    top: 100px;
+    z-index: -2;
+}
+
+.image::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    filter: brightness(40%);
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 85vh;
+    color: white;
+    font-size: 30px;
+    z-index: -2;
+    text-align: center;
+}
+
+.portfolio {
+    padding: 40px 0px;
+    text-align: center;
+}
