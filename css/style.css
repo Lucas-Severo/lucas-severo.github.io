@@ -8,6 +8,7 @@
 }
 
 html, body {
+    scroll-behavior: smooth;
     position: relative;
     height: 100%;
 }
@@ -57,13 +58,6 @@ header nav ul li a {
 
 .toggle:hover {
     color: rgba(144, 144, 144, 0.9);
-}
-
-.content {
-    position: relative;
-    top: 100px;
-    padding: 20px 0px;
-    z-index: -2;
 }
 
 @media (max-width: 768px) {
