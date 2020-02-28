@@ -32,14 +32,14 @@
     justify-content: center;
     position: relative;
     top: 100px;
-    height: 600px;
+    height: 700px;
     padding: 60px 0px;
     text-align: center;
     z-index: -2;
 }
 
 .portfolio h2 {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .projects {
@@ -65,12 +65,17 @@
 }
 
 .project a {
+    color: #2b4856;
     height: 25%;
     font-size: 15px;
 }
 
+.project a:hover {
+    color: #121d15;
+}
+
 .project p.title {
-    height: 30%;
+    height: 26%;
     font-size: 15px;
 }
 
@@ -93,14 +98,14 @@ div.project:nth-child(even) {
 }
 
 p.tech {
-    padding: 5px;
-    height: 20%;
+    padding: 10px;
+    height: 24%;
     box-shadow: 1px 1px lightblue;
     background-color: lightblue;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 14px;
     margin-left: 10px;
-    line-height: 20%;
+    line-height: 24%;
 }
 
 .techs {
@@ -117,21 +122,22 @@ p.tech {
     }
 
     .project img {
-        height: 60%;
+        width: 40%;
+        height: 90%;
     }
 
     .project p.title {
-        font-size: 10px;
+        font-size: 14px;
         margin-bottom: 10px;
     }
 
     .project a {
         margin-top: 5px;
-        font-size: 10px;
+        font-size: 14px;
     }
 
     p.tech {
-        height: 20%;
-        font-size: 8px;
+        height: 24%;
+        font-size: 12px;
     }
 }
