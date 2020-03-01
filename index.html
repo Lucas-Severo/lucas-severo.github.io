@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
     <script src="https://kit.fontawesome.com/5773d4ffcc.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -22,9 +23,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#portfolio" class="navbar">Portfolio</a></li>
-                <li><a href="#about" class="navbar">Sobre</a></li>
-                <li><a href="#" class="navbar">Contato</a></li>
+                <li><a class="anchor navbar-portfolio">Portfolio</a></li>
+                <li><a class="anchor navbar-about">Sobre</a></li>
+                <li><a class="anchor navbar-contact">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -37,7 +38,7 @@
             <div class="project">
                 <img src="img/project1.png" alt="">
                 <div class="info">
-                    <p class="title">Um site para procurar repositórios de usuários do github</p>
+                    <p class="title">Um site para buscar repositórios de usuários do github</p>
                     <a href="https://lucas-severo.github.io/github-repo/" target="_blank" rel="noreferrer">Website</a>
                     <a href="https://github.com/Lucas-Severo/github-repo" target="_blank" rel="noreferrer">Source code</a>
                     <div class="techs">
@@ -87,6 +88,21 @@
             <a href="https://github.com/Lucas-Severo" aria-label="Github" target="_blank" rel="noreferrer"><i class="fab fa-github social"></i></a>
             <a href="https://www.linkedin.com/in/lucas-rodrigues-severo-aa47a219b/" aria-label="Linkedin" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in social"></i></a>
         </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contato</h2>
+        <form action="">
+            <label for="name">Nome *</label>
+            <input type="text" id="name" required pattern="[a-zA-z ]+">
+            <label for="email">Email *</label>
+            <input type="text" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <label for="subject">Assunto *</label>
+            <input type="text" id="subject" required>
+            <label for="message">Mensagem *</label>
+            <textarea name="" id="message" cols="30" rows="10" required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
     </section>
 
     <script src="js/navbar.js"></script>
