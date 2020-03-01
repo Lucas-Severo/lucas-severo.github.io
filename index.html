@@ -92,19 +92,21 @@
 
     <section class="contact" id="contact">
         <h2>Contato</h2>
-        <form action="">
+        <form id="form">
             <label for="name">Nome *</label>
-            <input type="text" id="name" required pattern="[a-zA-z ]+">
+            <input type="text" id="name" name="name" required pattern="[a-zA-z ]+">
             <label for="email">Email *</label>
-            <input type="text" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <input type="text" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
             <label for="subject">Assunto *</label>
-            <input type="text" id="subject" required>
+            <input type="text" id="subject" name="subject" required>
             <label for="message">Mensagem *</label>
-            <textarea name="" id="message" cols="30" rows="10" required></textarea>
+            <textarea id="message" name="message" required></textarea>
+            <div class="response" style="align-self: center;"></div>
             <input type="submit" value="Enviar">
         </form>
     </section>
 
+    <script src="js/contact.js"></script>
     <script src="js/navbar.js"></script>
 </body>
 </html>

@@ -57,7 +57,7 @@ input[type="submit"]:hover {
 
 @media (max-width: 768px) {
     .contact {
-        width: 100%;
+        height: auto;
     }
     form {
         padding: 0 20px;
