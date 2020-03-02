@@ -64,6 +64,23 @@ header nav ul li a {
     cursor: pointer;
 }
 
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: center;
+    position: relative;
+    height: 120px;
+    top: 100px;
+    background-color: #4C5760;
+    color: white;
+    z-index: -2;
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
 @media (max-width: 768px) {
     .toggle {
         display: block;

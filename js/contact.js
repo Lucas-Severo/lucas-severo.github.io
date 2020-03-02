@@ -1,8 +1,8 @@
-var form = document.getElementById("form");
+const form = document.getElementById("form");
 
 form.addEventListener("submit", function(ev) {
     ev.preventDefault();
-    var data = new FormData(form);
+    const data = new FormData(form);
     form.reset();
     ajax("post", "https://formspree.io/mqkbyzvp", data);
 });
@@ -30,7 +30,7 @@ function ajax(method, url, data) {
         setTimeout(function() {
             responseElement.style.backgroundColor = ""
             responseElement.innerHTML = ""
-        }, 5000)
+        }, 4000)
     });
 }
 
