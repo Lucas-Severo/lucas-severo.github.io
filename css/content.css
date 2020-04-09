@@ -6,6 +6,7 @@
     width: 100%;
     height: 100%;
     filter: brightness(40%);
+    background-attachment: fixed;
     background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,7 +33,7 @@
     justify-content: center;
     position: relative;
     top: 100px;
-    height: 800px;
+    height: auto;
     padding: 60px 0px 0px;
     text-align: center;
     z-index: -2;
@@ -43,88 +44,69 @@
 }
 
 .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    grid-gap: 10px;
     font-size: 20px;
-    height: 100%;
-    padding: 30px 10px 0px;
+    padding: 30px 10px;
 }
 
 .project {
-    display: flex;
-    justify-content: center;
-    padding: 15px 0px;
-    width: 50%;
-    height: 30%;
-    border: 3px solid rgba(0, 0, 15, 0.2);
-    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-gap: 2px;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 4px 4px 4px #AAA;
+    background-color: #555;
+    border-radius: 3px;
+    padding-right: 10px;
 }
 
 .project img {
-    margin-top: 5px;
+    box-shadow: 4px 4px 4px #222;
 }
 
 .project a {
-    height: 18%;
     font-size: 15px;
 }
 
 .project p.title {
-    height: 40%;
     font-size: 15px;
-    padding: 0px 0px 50px 0px;
 }
 
-div.project:nth-child(odd) {
-    background-color: #3C5760;
-}
-
-div.project:nth-child(odd) p.title, div.project:nth-child(odd) a {
+div.project p.title, div.project a {
     color: white;
 }
 
-div.project:nth-child(odd) a:hover {
+div.project a:hover {
     color: black;
 }
-
-div.project:nth-child(even) {
-    background-color: #FF5F50;
-}
-
-div.project:nth-child(even) p.title, div.project:nth-child(even) a {
-    color: black;
-}
-
-div.project:nth-child(even) a:hover {
-    color: white;
-}
-
 
 .info {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    height: 100%;
     text-align: center;
 }
 
 p.tech {
-    padding: 10px;
-    height: 24%;
+    height: 20px;
+    line-height: 20px;
     box-shadow: 1px 1px lightblue;
     background-color: lightblue;
     cursor: pointer;
-    font-size: 14px;
-    margin-left: 10px;
-    margin-bottom: 5px;
-    line-height: 24%;
+    font-size: 12px;
 }
 
 .techs {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 20px;
     padding: 10px 0px;
 }
 
@@ -132,33 +114,25 @@ p.tech {
     .portfolio {
         height: auto;
     }
-    .project {
+    
+    .projects {
+        grid-template-columns: 1fr;
         width: 100%;
-        height: 40%;
-        margin-bottom: 20px;
-    }
-
-    .project img {
-        width: 40%;
-    }
-
-    .info {
-        width: 60%;
-        padding: 0px 10px;
     }
 
     .project p.title {
         font-size: 14px;
-        margin-bottom: 10px;
     }
 
     .project a {
-        margin-top: 5px;
         font-size: 14px;
     }
 
+    .techs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     p.tech {
-        height: 24%;
         font-size: 12px;
     }
 }
